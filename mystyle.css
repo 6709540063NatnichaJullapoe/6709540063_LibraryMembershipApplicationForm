@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: Ubuntu;
+    margin: 0;
+    background-color: rgb(204, 216, 219);
+}
+
+header{
+    font-size: 50px;
+    padding: 50px;
+    background-color: rgb(241, 251, 255);
+    color: rgb(110, 145, 175);
+}
+
+nav{
+    position: static;
+    background-color: rgb(110, 145, 175);
+    margin: 0;
+    padding: 15px;
+    top: 0;
+    text-align: right;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(241, 251, 255);
+    padding: 15px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(241, 251, 255);
+    color: rgb(110, 145, 175);
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        text-align: left;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    nav ul li a {
+        padding: 10px 15px;
+        display: block;
+    }
+}
+
 .required::after {
     content: " *";
     color: red;
