@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS Library</title>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
@@ -27,10 +28,10 @@
     <form>
         <fieldset>
             <legend>Register: </legend>
-            <label>Name (ภาษาไทย): </label>
-            <input type="text" placeholder="ณัฐณิชา จุลโพธิ์" name="Name" id="NameTH" required>
-            <label>Name (English): </label>
-            <input type="text" placeholder="Natnicha Jullapoe" name="Name" id="NameENG" required>
+            <label for="name" class="required">Name (ภาษาไทย): </label>
+            <input type="text" placeholder="ณัฐณิชา จุลโพธิ์" name="name" id="NameTH" required>
+            <label for="name" class="required">Name (English): </label>
+            <input type="text" placeholder="Natnicha Jullapoe" name="name" id="NameENG" required>
             <br>
             <label>Gender: </label><br>
             <input type="radio" name="gender" id="male" checked>
@@ -38,7 +39,7 @@
             <input type="radio" name="gender" id="female">
             <label>Female</label>
             <br>
-            <label>Student ID: </label>
+            <label for="stdID" class="required">Student ID: </label>
             <input type="text" name="stdID" id="stdID" maxlength="10" placeholder="6700000000" required>
             <br>
             <label>Faculty: </label>
@@ -62,12 +63,12 @@
             </select>
             <input type="text" name="others" id="others" placeholder="Type here for 'Others.'">
             <br>
-            <label>Email address: </label>
+            <label for="email" class="required">Email address: </label>
             <input type="email" name="email" id="email" placeholder="natnicha.jull@dome.tu.ac.th" required>
-            <label>Date of birth: </label>
+            <label for="birthday" class="required">Date of birth: </label>
             <input type="date" name="birthday" id="birthday" required>
             <br><br>
-            <label>Type of interest book genre: </label>
+            <label for="genre" class="required">Type of interest book genre: </label>
             <br>
             <textarea type="text" name="genre" id="genre" placeholder="Fantasy/Romantic/None" required></textarea>
             <br><br>
