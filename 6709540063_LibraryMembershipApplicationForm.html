@@ -23,27 +23,28 @@
         <label>🔎</label>
         <input type="search" name="searching" id="searching" placeholder="Search for books, service, ...">
     </div>
-    <br><br>
+    <br>
 
     <form>
         <fieldset>
             <legend>Register: </legend>
-            <label for="name" class="required">Name (ภาษาไทย): </label>
-            <input type="text" placeholder="ณัฐณิชา จุลโพธิ์" name="name" id="NameTH" required>
-            <label for="name" class="required">Name (English): </label>
-            <input type="text" placeholder="Natnicha Jullapoe" name="name" id="NameENG" required>
             <br>
+            <label for="name" class="required">Name (ภาษาไทย): </label>
+            <input type="text" placeholder="ณัฐณิชา จุลโพธิ์" name="name" id="name" required>
+            <label for="name" class="required">Name (English): </label>
+            <input type="text" placeholder="Natnicha Jullapoe" name="name" id="name" required>
+            <br><br>
             <label>Gender: </label><br>
             <input type="radio" name="gender" id="male" checked>
             <label>Male</label>
             <input type="radio" name="gender" id="female">
             <label>Female</label>
-            <br>
+            <br><br>
             <label for="stdID" class="required">Student ID: </label>
-            <input type="text" name="stdID" id="stdID" maxlength="10" placeholder="6700000000" required>
+            <input type="text" name="stdID" id="stdID" minlength="10" maxlength="10" placeholder="6700000000" required>
             <br>
             <label>Faculty: </label>
-            <select>
+            <select name="Faculty" id="Faculty">
                 <option value="Faculty">Faculty of Law</option>
                 <option value="Faculty">Faculty of Political Science</option>
                 <option value="Faculty">Faculty of Economics</option>
@@ -62,7 +63,7 @@
                 <option value="Faculty">Others...</option>
             </select>
             <input type="text" name="others" id="others" placeholder="Type here for 'Others.'">
-            <br>
+            <br><br>
             <label for="email" class="required">Email address: </label>
             <input type="email" name="email" id="email" placeholder="natnicha.jull@dome.tu.ac.th" required>
             <label for="birthday" class="required">Date of birth: </label>
@@ -75,7 +76,7 @@
             <input type="checkbox" name="news" id="news">
             <label>Would you like to receive news and announcements from the library via email?</label>
             <br><br>
-            <input type="submit" value="Sign in">
+            <input type="submit" value="Sign in" id="signIn">
         </fieldset>
     </form>
 

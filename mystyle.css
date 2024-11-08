@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body{
+body {
     font-family: Ubuntu;
     margin: 0;
-    background-color: rgb(204, 216, 219);
+    background-color: rgb(222, 235, 238);
     color: rgb(110, 145, 175);
 }
 
-header{
+header {
     font-size: 50px;
     padding: 50px;
     font-style: italic;
     background-color: rgb(241, 251, 255);
-    
+
 }
 
-header a{
+header a {
     text-decoration: none;
     color: rgb(110, 145, 175);
 }
 
-nav{
+nav {
     position: static;
     background-color: rgb(110, 145, 175);
     margin: 0;
@@ -29,25 +29,25 @@ nav{
     text-align: right;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: rgb(241, 251, 255);
     padding: 15px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: rgb(241, 251, 255);
     color: rgb(110, 145, 175);
     transition: color 0.3s ease;
@@ -57,19 +57,19 @@ nav ul li a:hover{
     nav ul {
         text-align: left;
     }
-    
+
     nav ul li {
         display: block;
         margin-bottom: 5px;
     }
-    
+
     nav ul li a {
         padding: 10px 15px;
         display: block;
     }
 }
 
-.search-container{
+.search-container {
     position: relative;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ nav ul li a:hover{
     margin-left: auto;
 }
 
-#searching{
+#searching {
     width: 100%;
     padding: 10px;
     padding-left: 10px;
@@ -89,11 +89,102 @@ nav ul li a:hover{
     outline: none;
 }
 
-.search-container:hover{
-    box-shadow: 0 4px 8px rgb(156, 175, 184);
+.search-container:hover {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
 }
 
 .required::after {
     content: " *";
     color: red;
-  }
+}
+
+form {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+form fieldset {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(187, 205, 214);
+    background-color: rgb(241, 251, 255);
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+}
+
+form fieldset legend {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: -10px;
+    border-style: none;
+    border-radius: 5px;
+    color: rgb(241, 251, 255);
+    background-color: rgb(110, 145, 175);
+}
+
+#name:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);
+}
+
+#stdID:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);
+}
+
+#Faculty:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);color: rgb(110, 145, 175);
+}
+
+#others:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);
+}
+
+#email:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);
+}
+
+#birthday:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);
+}
+
+#genre:focus {
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+    border-style: none;
+    border-radius: 5px;
+    border-color: rgb(110, 145, 175);
+    
+}
+
+#signIn{
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    color: rgb(241, 251, 255);
+    background-color: rgb(110, 145, 175);
+}
+
+#signIn:hover{
+    box-shadow: 0 4px 8px rgb(187, 205, 214);
+}
+
+#signIn:focus{
+    background-color: rgb(241, 251, 255);
+    color: rgb(110, 145, 175);
+    transition: color 0.3s ease;
+}
