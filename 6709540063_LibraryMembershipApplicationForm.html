@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS Library</title>
 </head>
+
 <body>
     <header>CS Library</header>
 
@@ -19,5 +21,63 @@
     </nav>
 
     <input type="search" name="searching" id="searching" placeholder="Search for books, service, ...">
+
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend>Register: </legend>
+            <label>Name (ภาษาไทย): </label>
+            <input type="text" placeholder="ณัฐณิชา จุลโพธิ์" name="Name" id="NameTH" required>
+            <label>Name (English): </label>
+            <input type="text" placeholder="Natnicha Jullapoe" name="Name" id="NameENG" required>
+            <br>
+            <label>Gender: </label><br>
+            <input type="radio" name="gender" id="male" checked>
+            <label>Male</label>
+            <input type="radio" name="gender" id="female">
+            <label>Female</label>
+            <br>
+            <label>Student ID: </label>
+            <input type="text" name="stdID" id="stdID" maxlength="10" placeholder="6700000000" required>
+            <br>
+            <label>Faculty: </label>
+            <select>
+                <option value="Faculty">Faculty of Law</option>
+                <option value="Faculty">Faculty of Political Science</option>
+                <option value="Faculty">Faculty of Economics</option>
+                <option value="Faculty">Faculty of Social Administration</option>
+                <option value="Faculty">Faculty of Sociology and Anthropology</option>
+                <option value="Faculty">Faculty of Liberal Arts</option>
+                <option value="Faculty">Faculty of Journalism and Mass Communication</option>
+                <option value="Faculty">Faculty of Science and Technology</option>
+                <option value="Faculty">Faculty of Engineering</option>
+                <option value="Faculty">Faculty of Architecture and Planning</option>
+                <option value="Faculty">Faculty of Medicine</option>
+                <option value="Faculty">Faculty of Allied Health Sciences</option>
+                <option value="Faculty">Faculty of Dentistry</option>
+                <option value="Faculty">Faculty of Nursing</option>
+                <option value="Faculty">Faculty of Public Health</option>
+                <option value="Faculty">Others...</option>
+            </select>
+            <input type="text" name="others" id="others" placeholder="Type here for 'Others.'">
+            <br>
+            <label>Email address: </label>
+            <input type="email" name="email" id="email" placeholder="natnicha.jull@dome.tu.ac.th" required>
+            <label>Date of birth: </label>
+            <input type="date" name="birthday" id="birthday" required>
+            <br><br>
+            <label>Type of interest book genre: </label>
+            <br>
+            <textarea type="text" name="genre" id="genre" placeholder="Fantasy/Romantic/None" required></textarea>
+            <br><br>
+            <input type="checkbox" name="news" id="news">
+            <label>Would you like to receive news and announcements from the library via email?</label>
+            <br><br>
+            <input type="submit" value="Sign in">
+        </fieldset>
+    </form>
+
 </body>
+
 </html>
