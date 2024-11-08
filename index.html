@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Library</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <header><a href="Homepage.html">CS Library</a></header>
+    <nav>
+        <ul>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="Bookshelf.html">Bookshelf</a></li>
+            <li><a href="Catalog.html">Catalog</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="ContactUs.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <label>🔎</label>
+        <input type="search" name="searching" id="searching" placeholder="Search for books, service, ...">
+    </div>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Register: </legend>
+            <br>
+            <label for="name" class="required">Name (ภาษาไทย): </label>
+            <input type="text" placeholder="ณัฐณิชา จุลโพธิ์" name="name" id="name" required>
+            <label for="name" class="required">Name (English): </label>
+            <input type="text" placeholder="Natnicha Jullapoe" name="name" id="name" required>
+            <br><br>
+            <label>Gender: </label><br>
+            <input type="radio" name="gender" id="male" checked>
+            <label>Male</label>
+            <input type="radio" name="gender" id="female">
+            <label>Female</label>
+            <br><br>
+            <label for="stdID" class="required">Student ID: </label>
+            <input type="text" name="stdID" id="stdID" minlength="10" maxlength="10" placeholder="6700000000" required>
+            <br>
+            <label>Faculty: </label>
+            <select name="Faculty" id="Faculty">
+                <option value="Faculty">Faculty of Law</option>
+                <option value="Faculty">Faculty of Political Science</option>
+                <option value="Faculty">Faculty of Economics</option>
+                <option value="Faculty">Faculty of Social Administration</option>
+                <option value="Faculty">Faculty of Sociology and Anthropology</option>
+                <option value="Faculty">Faculty of Liberal Arts</option>
+                <option value="Faculty">Faculty of Journalism and Mass Communication</option>
+                <option value="Faculty">Faculty of Science and Technology</option>
+                <option value="Faculty">Faculty of Engineering</option>
+                <option value="Faculty">Faculty of Architecture and Planning</option>
+                <option value="Faculty">Faculty of Medicine</option>
+                <option value="Faculty">Faculty of Allied Health Sciences</option>
+                <option value="Faculty">Faculty of Dentistry</option>
+                <option value="Faculty">Faculty of Nursing</option>
+                <option value="Faculty">Faculty of Public Health</option>
+                <option value="Faculty">Others...</option>
+            </select>
+            <input type="text" name="others" id="others" placeholder="Type here for 'Others.'">
+            <br><br>
+            <label for="email" class="required">Email address: </label>
+            <input type="email" name="email" id="email" placeholder="natnicha.jull@dome.tu.ac.th" required>
+            <label for="birthday" class="required">Date of birth: </label>
+            <input type="date" name="birthday" id="birthday" required>
+            <br><br>
+            <label for="genre" class="required">Type of interest book genre: </label>
+            <br>
+            <textarea type="text" name="genre" id="genre" placeholder="Fantasy/Romantic/None" required></textarea>
+            <br><br>
+            <input type="checkbox" name="news" id="news">
+            <label>Would you like to receive news and announcements from the library via email?</label>
+            <br><br>
+            <input type="submit" value="Sign in" id="signIn">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
