@@ -4,11 +4,13 @@ body{
     font-family: Ubuntu;
     margin: 0;
     background-color: rgb(204, 216, 219);
+    color: rgb(110, 145, 175);
 }
 
 header{
     font-size: 50px;
     padding: 50px;
+    font-style: italic;
     background-color: rgb(241, 251, 255);
     color: rgb(110, 145, 175);
 }
@@ -60,6 +62,29 @@ nav ul li a:hover{
         padding: 10px 15px;
         display: block;
     }
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#searching{
+    width: 100%;
+    padding: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.Search{
+    border-style: none;
 }
 
 .required::after {
